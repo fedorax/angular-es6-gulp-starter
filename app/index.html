@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Starter Kit</title>
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Flight Search">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Flight Search">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#2F3BA2">
+
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.css">
+
+    <!-- Your styles -->
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body ng-cloak ng-app="ecomm">
+    <md-toolbar class="md-toolbar-tools header">
+        <div layout="row" flex>
+            <div>
+                <img src="" class="logo-img">
+            </div>
+            <div class="title-section">
+                <h2 class="main-title">Ecomm</h2>
+                <h5 class="tagline">Search Engine</h5>
+            </div>
+        </div>
+    </md-toolbar>
+    <md-content ng-controller="CatalogController as main" layout="column">
+         <header layout>
+            The search filter will come here
+        </header>
+        <product-list results="main.products" layout layout-wrap layout-align="center"></product-list>
+    </md-content>
+       
+        
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
+    <!-- Angular Material Library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <!-- build:js scripts/main.min.js -->
+    <script src="scripts/app/catalog/catalog.module.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/app/constants.js"></script>
+    <script src="scripts/app/catalog/catalog.service.js"></script>
+    <script src="scripts/app/catalog/filterform.component.js"></script>
+    <script src="scripts/app/catalog/product-list.component.js"></script>
+    <script src="scripts/app/catalog/catalog.controller.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>

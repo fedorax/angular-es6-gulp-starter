@@ -1,0 +1,12 @@
+'use strict'; /* eslint-env browser */
+/* global angular */
+(function () {
+  'use strict';
+  angular.module('ecomm').
+  constant('AppConstant', {
+    API: {
+      GET_PRODUCTS: 'https://hackerearth.0x10.info/api/nitro_deals?type=json&query=list_deals' } });
+
+
+})();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbnN0YW50cy5qcyJdLCJuYW1lcyI6WyJhbmd1bGFyIiwibW9kdWxlIiwiY29uc3RhbnQiLCJBUEkiLCJHRVRfUFJPRFVDVFMiXSwibWFwcGluZ3MiOiJjQUFBO0FBQ0E7QUFDQSxDQUFDLFlBQVc7QUFDVjtBQUNBQSxVQUFRQyxNQUFSLENBQWUsT0FBZjtBQUNFQyxVQURGLENBQ1csYUFEWCxFQUN5QjtBQUN2QkMsU0FBSztBQUNKQyxvQkFBYywwRUFEVixFQURrQixFQUR6Qjs7O0FBTUQsQ0FSRCIsImZpbGUiOiJjb25zdGFudHMuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBlc2xpbnQtZW52IGJyb3dzZXIgKi9cbi8qIGdsb2JhbCBhbmd1bGFyICovXG4oZnVuY3Rpb24oKSB7XG4gICd1c2Ugc3RyaWN0JztcbiAgYW5ndWxhci5tb2R1bGUoJ2Vjb21tJylcbiAgXHQuY29uc3RhbnQoJ0FwcENvbnN0YW50Jyx7XG4gIFx0XHRBUEk6IHtcbiAgXHRcdFx0R0VUX1BST0RVQ1RTOiAnaHR0cHM6Ly9oYWNrZXJlYXJ0aC4weDEwLmluZm8vYXBpL25pdHJvX2RlYWxzP3R5cGU9anNvbiZxdWVyeT1saXN0X2RlYWxzJ1xuICBcdFx0fVxuICBcdH0pXG59KSgpO1xuIl0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9
